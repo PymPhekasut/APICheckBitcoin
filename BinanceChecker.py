@@ -2,8 +2,8 @@
 
 from binance.client import Client
 
-api_key = '9NOiuEJQVLpdlx07GsgIdTmxWme6FkuaBt8rMh9QLwQqjTJPddrVVENoWTQhTpLA'
-api_secret = 'tInfMhwS7UMTqUG0tcsUVlv7teBroO2XPFXX4QbQOspJyDCizCb1qWGYqKweTAhK'
+api_key = '---------------'
+api_secret = '-----------------'
 client = Client(api_key, api_secret)
 
 #depth = client.get_order_book(symbol='BNBBTC')
@@ -12,7 +12,7 @@ client = Client(api_key, api_secret)
 
 prices = client.get_all_tickers()
 
-mycoin = ['BTCBUSD','DOGEBUSD','ETHBUSD'] #many coin
+mycoin = ['BTCBUSD','DOGEBUSD','ETHBUSD'] #check several coin
 
 for p in prices:
     for c in mycoin:
